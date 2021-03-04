@@ -1,0 +1,133 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/* Navigation Bar :logo and Image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar : List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+/*Contact Section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("final\ contact.jpg")no-repeat center center/cover;
+}
+
+#Contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+#Contact-box input, #Contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* Utility classes */
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.h1 {
+    font-size: 65px;
+    text-align: center;
+}
+.Active {
+    color: red;
+    background-color: lime;
+}
+input{
+    border: skyblue 1px solid;
+}
